@@ -1,0 +1,191 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('images/1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+    
+}
+.model{
+    background-color: #fff;
+    height: 270px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    z-index: -10;
+}
+
+.model h1{
+    font-size: 3.5rem;
+    color:hsl(207, 75%, 14%);
+    padding-bottom: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.model button{
+    background-color:#49a6e9;
+    border-color: #49a6e9;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: sans-serif;
+    border-radius: 10px;
+    width: 180px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+.model button:hover{
+    background-color: #fff;
+    color:#49a6e9
+}
+.model_overlay{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(126, 174, 223,0.7);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.model-outer{
+    background-color: #fff;
+    height: 270px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    display: none;
+    position: relative;
+}
+.model-outer h1{
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:hsl(207, 75%, 14%);
+
+}
+.fa-times{
+    position: absolute;
+    top:20px;
+    right: 20px;
+    font-size: 1.8rem;
+    color:rgb(173, 33, 33);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.fa-times:hover{
+transform: scale(1.5);
+opacity: 0.7;
+}
+    @media only screen and (max-width:550px){
+        .model{
+            background-color: #fff;
+            height: 250px;
+            width: 310px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+            border-radius: 10px;
+            z-index: -10;
+        }
+        .model h1{
+            font-size: 2rem;
+            color:hsl(207, 75%, 14%);
+            padding-bottom: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .model button{
+            background-color:#49a6e9;
+            border-color: #49a6e9;
+            font-size: 1rem;
+            padding: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+            font-family: sans-serif;
+            border-radius: 10px;
+            width: 180px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        .model-outer{
+            background-color: #fff;
+            height: 250px;
+            width: 310px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+            border-radius: 10px;
+            display: none;
+            position: relative;
+        }
+        
+}
+@media only screen and (min-width:550px) and (max-width:799px){
+    .model{
+        height: 300px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        border-radius: 10px;
+        z-index: -10;
+    }
+    .model h1{
+        font-size: 2rem;
+        color:hsl(207, 75%, 14%);
+        padding-bottom: 50px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .model button{
+        background-color:#49a6e9;
+        border-color: #49a6e9;
+        font-size: 1rem;
+        padding: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: sans-serif;
+        border-radius: 10px;
+        width: 180px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    .model-outer{
+        background-color: #fff;
+        height: 300px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        border-radius: 10px;
+        display: none;
+        position: relative;
+    }
+}
