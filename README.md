@@ -1,3 +1,6 @@
 # Model-View
 
-#### Image Silders  HTML,CSS,Viniila Javascipt
+#### Simple model view 
+- HTML
+- CSS
+- Viniila Javascipt
